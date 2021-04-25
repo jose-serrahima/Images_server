@@ -1,6 +1,3 @@
-import sys
-sys.path.append('/home/serra/bin')
-
 import htql
 import urllib.request
 import os
