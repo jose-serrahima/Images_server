@@ -1,60 +1,17 @@
-exports.get_program_list = function(req, res) {
-    var programa= req.params.programName;
-    var lista = require('../List/'+programa+'.json');
-    res.json(lista);
+// Return filter list
+exports.get_filters = function (req, res){
+    var filters = require('../list/filter/filter_list.json');
+    res.json(filters);
+}
+
+// Return package list
+exports.get_package_list = function (req, res){
+    var package_list = require('../list/'+req.params.name+".json");
+    res.json(package_list);
 }
 
 
 
+exports.execute = function (req, res){
 
-
-
-
-exports.list_all_tasks = function(req, res) {
-    Task.find({}, function(err, task) {
-        if (err)
-            res.send(err);
-        res.json(task);
-    });
-  };
-  
-exports.create_a_task = function(req, res) {
-var new_task = new Task(req.body);
-new_task.save(function(err, task) {
-    if (err)
-        res.send(err);
-    res.json(task);
-});
-};
-
-
-exports.read_a_task = function(req, res) {
-Task.findById(req.params.taskId, function(err, task) {
-    if (err)
-        res.send(err);
-    res.json(task);
-});
-};
-
-
-exports.update_a_task = function(req, res) {
-Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {
-    if (err)
-        res.send(err);
-    res.json(task);
-});
-};
-
-
-exports.delete_a_task = function(req, res) {
-
-
-Task.remove({
-    _id: req.params.taskId
-}, function(err, task) {
-    if (err)
-        res.send(err);
-    res.json({ message: 'Task successfully deleted' });
-});
-};
-
+}

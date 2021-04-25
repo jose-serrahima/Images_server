@@ -1,23 +1,19 @@
 'use strict';
 module.exports = function(app) {
   var principal = require('../controllers/principal');
+  var packages = require('../controllers/packages');
 
-  var files = require('../controllers/files')
+  app.route('/filters')
+    .get(principal.get_filters);
 
+  app.route('/package_list/:name')
+    .get(principal.get_package_list);
 
-  app.route('/selected')
-    .get(files.get_selected_files)
-    .post(files.set_selected_files)
-    .delete(files.delete_files);
+  app.route('/selected_item')
+    .post(packages.add_item)
+    .delete(packages.delete_item);
+  
+  app.route('/execute')
+    .post(principal.execute);
 
-  // principal Routes
-  app.route('/tasks')
-    .get(principal.get_program_list)
-    .post(principal.create_a_task);
-
-
-  app.route('/programs/:programName')
-    .get(principal.get_program_list);
-    /*.put(principal.update_a_task)
-    .delete(principal.delete_a_task);*/
 };
