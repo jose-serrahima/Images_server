@@ -3,7 +3,7 @@ import json
 import os
 
 #Recover al packages names and decription for filter search
-directory = r'../api/api/List'
+directory = r'../api/api/list'
 f = open(directory+"/filter/filter_list.json", "w")
 
 str_json ="{\n\"filters\" : [\n";
