@@ -10,8 +10,6 @@ exports.get_package_list = function (req, res){
     res.json(package_list);
 }
 
-
-
 exports.execute = function (req, res){
 
 }

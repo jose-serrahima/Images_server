@@ -1,27 +1,30 @@
-// Return package list
+// Add package to file
 exports.add_item = function (req, res){
+
+    var directory='/home/serra/Tmp/Images_server/'
 
     var package = req.body.package_name;
     var program = req.body.program_name;
 
-    console.log("Paquete: " + reqgit)
-    console.log("programa: " + program)
-    
-    res.send('ok');
-
-    /*fs = require('fs')
-    var file = require('../../debian-live-config/config/package-lists/'+req.params.package_name+".list.chroot");
-    fs.writeFile('../../debian-live-config/config/package-lists/'+req.params.package_name+".list.chroot", req.params.software_name, function (err,data) {
+    fs = require('fs')
+    fs.writeFile(directory+'debian-live-config/config/package-lists/'+package+".list.chroot", program, function (err,data) {
         if (err) {
-            return console.log(err);
+            res.json('ko');
         }
-        console.log(data);
     });
-    res.json('ok')*/
+    res.json('ok')
 }
 
-var bodyParser = require('body-parser');
-
 exports.delete_item = function (req, res){
-    var user = req.body.user;
+    var directory='/home/serra/Tmp/Images_server/'
+
+    var package = req.body.package_name;
+    var program = req.body.program_name;
+
+    fs = require('fs')
+    var data = fs.readFileSync(directory+'debian-live-config/config/package-lists/'+package+".list.chroot", 'utf-8');
+    var newValue = data.replace(program, '');
+    fs.writeFileSync(directory+'debian-live-config/config/package-lists/'+package+".list.chroot", newValue, 'utf-8');
+
+    res.json('ok')
 }
