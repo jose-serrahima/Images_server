@@ -1,0 +1,25 @@
+{ 
+	"name" : "Embedded software",
+ 	"desc" : "Software suitable for use in embedded applications.",
+ 	"prog" : [
+		{"item": "ixo-usb-jtag", "version" : " (0.0.1-1)", "description" : "Altera Bus Blaster emulation using Cypress FX2 chip"},
+		{"item": "libts-bin", "version" : " (1.19-1)", "description" : "touch screen library utilities"},
+		{"item": "matchbox", "version" : " (1:6)", "description" : "base X environment for resource-limited systems"},
+		{"item": "matchbox-common", "version" : " (0.9.1-7)", "description" : "common files for Matchbox Project applications"},
+		{"item": "matchbox-desktop", "version" : " (2.0-6)", "description" : "desktop application launcher for resource-limited systems"},
+		{"item": "matchbox-keyboard", "version" : " (0.1+svn20080916-12)", "description" : "on-screen keyboard"},
+		{"item": "matchbox-keyboard-im", "version" : " (0.1+svn20080916-12)", "description" : "GTK+ input module for on-screen keyboard"},
+		{"item": "matchbox-panel", "version" : " (0.9.3-10)", "description" : "desktop panel for resource-limited systems"},
+		{"item": "matchbox-panel-manager", "version" : " (0.1-8)", "description" : "panel manager for matchbox-panel"},
+		{"item": "matchbox-themes-extra", "version" : " (0.3-4)", "description" : "extra themes for matchbox-window-manager"},
+		{"item": "matchbox-window-manager", "version" : " (1.2-osso21-4)", "description" : "window manager for resource-limited systems"},
+		{"item": "openocd", "version" : " (0.10.0-5)", "description" : "Open on-chip JTAG debug solution for ARM and MIPS systems"},
+		{"item": "openwince-include", "version" : " (0.3.2-4)", "description" : "Common include files for the open wince project"},
+		{"item": "openwince-jtag", "version" : " (0.5.1-7)", "description" : "allows programming jtag capable devices such as CPUs or FPGAs"},
+		{"item": "python3-pyocd", "version" : " (0.13.1+dfsg-1)", "description" : "ARM Cortex-M programming tools (Python3)"},
+		{"item": "rkflashtool", "version" : " (0~20160324-2)", "description" : "Tools for flashing Rockchip devices"},
+		{"item": "urjtag", "version" : " (0.10+r2007-1.2+b2)", "description" : "JTAG programmer for various flash parts and boards"},
+		{"item": "usbprog", "version" : " (0.2.0-2.2+b2)", "description" : "Firmware programming tool for the USBprog hardware"},
+		{"item": "usbprog-gui", "version" : " (0.2.0-2.2+b2)", "description" : "GUI firmware programming tool for the USBprog hardware"}
+	]
+}

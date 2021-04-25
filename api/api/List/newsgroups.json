@@ -1,0 +1,28 @@
+{ 
+	"name" : "Newsgroups",
+ 	"desc" : "Software to access Usenet, to set up news servers, etc.",
+ 	"prog" : [
+		{"item": "brag", "version" : " (1.4.1-2.1)", "description" : "Downloads and assembles multipart Usenet binaries"},
+		{"item": "canlock", "version" : " (3.1.0-1)", "description" : "utilities for creating and verifying Usenet cancel locks"},
+		{"item": "gup", "version" : " (0.5.15+b1)", "description" : "let a remote site change their newsgroups subscription"},
+		{"item": "inn", "version" : " (1:1.7.2q-46)", "description" : "News transport system `InterNetNews&#39; by the ISC and Rich Salz"},
+		{"item": "inn2", "version" : " (2.6.3-1+deb10u2)", "description" : "&#39;InterNetNews&#39; news server"},
+		{"item": "inn2-inews", "version" : " (2.6.3-1+deb10u2)", "description" : "NNTP client news injector, from InterNetNews (INN)"},
+		{"item": "jamnntpd", "version" : " (1.3-1)", "description" : "NNTP Server allowing newsreaders to access a JAM messagebase"},
+		{"item": "knews", "version" : " (1.0b.1-32)", "description" : "Graphical threaded news reader"},
+		{"item": "leafnode", "version" : " (1.11.11-1)", "description" : "NNTP server for small sites"},
+		{"item": "nglister", "version" : " (1.0.2)", "description" : "Downloads information from NNTP server"},
+		{"item": "nn", "version" : " (6.7.3-10+b2)", "description" : "Heavy-duty USENET news reader (curses-based client)"},
+		{"item": "pan", "version" : " (0.145-1)", "description" : "newsreader based on GTK2, which looks like Forte Agent"},
+		{"item": "sinntp", "version" : " (1.5-1.1)", "description" : "tiny non-interactive NNTP client"},
+		{"item": "slrn", "version" : " (1.0.3+dfsg-3)", "description" : "threaded text-mode news reader"},
+		{"item": "slrnface", "version" : " (2.1.1-7+b1)", "description" : "shows X-Faces from a newsposting on an X11 terminal emulator"},
+		{"item": "slrnpull", "version" : " (1.0.3+dfsg-3)", "description" : "pulls a small newsfeed from an NNTP server"},
+		{"item": "sn", "version" : " (0.3.8-12)", "description" : "Small NNTP server for leaf sites"},
+		{"item": "statnews", "version" : " (2.6)", "description" : "Extracts useful statistics out of a newsgroup or mailing list"},
+		{"item": "suck", "version" : " (4.3.4-1)", "description" : "small newsfeed from an NNTP server with standard NNTP commands"},
+		{"item": "tin", "version" : " (1:2.4.3-1)", "description" : "Full-screen easy to use Usenet newsreader"},
+		{"item": "trn4", "version" : " (4.0-test77-12) [non-free]", "description" : "Threaded USENET news reader, based on rn (4.0 beta test)"},
+		{"item": "uucpsend", "version" : " (1.1-4.1)", "description" : "Alternative Frontend for UUCP Batching with INN"}
+	]
+}
