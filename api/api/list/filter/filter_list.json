@@ -1,5 +1,4 @@
-{
-"filters" : [
+[
 	{"name": "Library development", "desc" : "Libraries necessary for developers to write programs that use them."},
 	{"name": "Electronics", "desc" : "Electronics utilities."},
 	{"name": "Fonts", "desc" : "Font packages."},
@@ -59,5 +58,4 @@
 	{"name": "GNOME", "desc" : "The GNOME desktop environment, a powerful, easy to use set of integrated applications."},
 	{"name": "Zope/Plone Framework", "desc" : "Zope Application Server and Plone Content Managment System."},
 	{"name": "Editors", "desc" : "Software to edit files. Programming environments."}
-	]
-}
+]

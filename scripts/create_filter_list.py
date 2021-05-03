@@ -6,7 +6,7 @@ import os
 directory = r'../api/api/list'
 f = open(directory+"/filter/filter_list.json", "w")
 
-str_json ="{\n\"filters\" : [\n";
+str_json ="[\n";
 
 for filename in os.listdir(directory):
 	if filename.endswith(".json"):
@@ -22,6 +22,6 @@ str_json = str_json[:str_json.rfind('\n')]
 # Delete last ,
 str_json = str_json[:-1]
 # Adds clousure to json
-str_json += '\n\t]\n}'
+str_json += '\n]'
 f.write (str_json)
 f.close()
