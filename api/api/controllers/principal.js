@@ -1,12 +1,12 @@
 // Return filter list
-exports.get_filters = function (req, res){
-    var filters = require('../list/filter/filter_list.json');
-    res.json(filters);
+exports.get_sections = function (req, res){
+    var sections = require('../list/sections/section_list.json');
+    res.json(sections);
 }
 
 // Return package list
 exports.get_package_list = function (req, res){
-    var package_list = require('../list/'+req.params.name+".json");
+    var package_list = require('../list/'+req.params.name.toLowerCase().replace(' ', '_')+".json");
     res.json(package_list);
 }
 
