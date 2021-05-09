@@ -1,0 +1,31 @@
+.app-filter {
+    width: 30%;
+}
+
+.app-principal {
+    width: 70%;
+}
+
+
+.cabecera { grid-area: header; 
+}
+.menu { grid-area: menu; }
+.body { grid-area: main; }
+.pie { grid-area: footer; }
+.derecha { grid-area: derecha;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main derecha derecha'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+  position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+}
