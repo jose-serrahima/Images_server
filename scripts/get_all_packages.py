@@ -4,7 +4,6 @@ import os
 
 base="https://packages.debian.org/es/stable/";
 
-
 # Recover html
 fp = urllib.request.urlopen(base)
 mybytes = fp.read()
@@ -34,7 +33,7 @@ for x in blocks:
 	packages = htql.query(mystr, "<dl>.<dt sep>2-0 {Item=<a>:tx; Version=<a>:xx; Description=<dd>:tx } \n")
 	# Loop packages
 	for y in packages:
-		json += '\t\t{"name": "'+ y[0] + '", "version" : "' + y[1] + '", "description" : "' + y[2] + '"},\n';		
+		json += '\t\t{"name": "'+ y[0] + '", "version" : "' + y[1] + '", "description" : "' + y[2] + '", "selected" : false},\n';		
 	# Delete last \n
 	json = json[:json.rfind('\n')]
 	# Delete last ,
@@ -45,3 +44,4 @@ for x in blocks:
 	f = open('../api/api/list/'+x[0].lower().replace(" ", "_").replace("/", "_")+".json", "w")
 	f.write (json)
 	f.close()
+	print(x[0].lower().replace(" ", "_").replace("/", "_")+".json" + " writed." )
