@@ -28,3 +28,26 @@ exports.delete_item = function (req, res){
 
     res.json('ok')
 }
+
+exports.add_package = function (req, res){
+    let folder =req.param.folder;
+
+    fs = require('fs')
+    fs.writeFile("asdf.tx", "JSON.stringify(req.body)", function (err,data) {
+        if (err) {
+            res.json('ko');
+        }
+    });
+
+
+    res.json('ok')
+    /*var directory=req.params.folder
+
+
+
+    Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {
+    if (err)
+      res.send(err);
+    res.json(task);
+  });*/
+}
