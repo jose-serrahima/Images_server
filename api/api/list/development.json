@@ -947,7 +947,7 @@
 		{"name": "gdb-source", "version" : " (8.2.1-2)", "description" : "GNU Debugger (source)", "selected" : false},
 		{"name": "gdbserver", "version" : " (8.2.1-2+b3)", "description" : "GNU Debugger (remote server)", "selected" : false},
 		{"name": "gdc", "version" : " (4:8.3.0-1)", "description" : "D compiler (language version 2), based on the GCC backend", "selected" : false},
-		{"name": "gdc", "version" : "", "description" : "virtual package provided by <a href='../gdc-8'>gdc-8</a>, <a href='../gdc-7'>gdc-7</a>", "selected" : false},
+		{"name": "gdc", "version" : "", "description" : "virtual package provided by <a href='../gdc-7'>gdc-7</a>, <a href='../gdc-8'>gdc-8</a>", "selected" : false},
 		{"name": "gdc-7", "version" : " (7.4.0-6)", "description" : "GNU D compiler (version 2)", "selected" : false},
 		{"name": "gdc-7-multilib", "version" : " (7.4.0-6)", "description" : "GNU D compiler (version 2, multilib support)", "selected" : false},
 		{"name": "gdc-8", "version" : " (8.3.0-6)", "description" : "GNU D compiler (version 2)", "selected" : false},

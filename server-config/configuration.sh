@@ -1,18 +1,23 @@
 #!/bin/bash
 
 if  [ ! -d ~/bin ]; then
+	echo "bin folder created at ~/bin"
 	mkdir ~/bin
 fi
 
 if  [ ! -d ~/tmp ]; then
+	echo "tmp folder created at ~/tmp"
 	mkdir ~/tmp
 fi
 
 # Download node 14.16.1
-wget https://nodejs.org/dist/v14.16.1/node-v14.16.1-linux-x64.tar.xz -P ~/tmp
-tar -xf ~/tmp/node-v14.16.1-linux-x64.tar.xz -C ~/tmp/
-mv ~/tmp/node-v14.16.1-linux-x64 ~/bin/node
+
+echo "Downloading Node"
+#wget https://nodejs.org/dist/v14.16.1/node-v14.16.1-linux-x64.tar.xz -P ~/tmp
+#tar -xf ~/tmp/node-v14.16.1-linux-x64.tar.xz -C ~/tmp/
+#mv ~/tmp/node-v14.16.1-linux-x64 ~/bin/node
 rm -rf ~/tmp
+echo "tmp folder deleted"
 
 # Check if .profile exist
 if [ ! -f ~/.profile ]; then
@@ -20,8 +25,9 @@ if [ ! -f ~/.profile ]; then
 fi
 
 # Check if .profile contains node route
+echo "Adding node route to the path"
 path=~/bin/node/bin
 file=~/.profile
-echo $PATH | grep -q "\(^\|:\)$path\(:\|/\{0,1\}$\)" || echo "PATH=\$PATH:$path" >> ".profile"; source "$file"
+echo $PATH | grep -q "\(^\|:\)$path\(:\|/\{0,1\}$\)" || echo "PATH=\$PATH:$path" >> "$file";
 
-source ~/.profile
+source "$file"

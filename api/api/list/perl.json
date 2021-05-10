@@ -3890,7 +3890,7 @@
 		{"name": "perlbrew", "version" : " (0.86-1)", "description" : "script to manage perl installations in your $HOME", "selected" : false},
 		{"name": "perlindex", "version" : " (1.606-1)", "description" : "Perl manual pages index and query application", "selected" : false},
 		{"name": "perlmagick", "version" : " (8:6.9.10.23+dfsg-2.1+deb10u1)", "description" : "Perl interface to ImageMagick -- dummy package", "selected" : false},
-		{"name": "perlmagick", "version" : "", "description" : "virtual package provided by <a href='../libimage-magick-perl'>libimage-magick-perl</a>, <a href='../graphicsmagick-libmagick-dev-compat'>graphicsmagick-libmagick-dev-compat</a>", "selected" : false},
+		{"name": "perlmagick", "version" : "", "description" : "virtual package provided by <a href='../graphicsmagick-libmagick-dev-compat'>graphicsmagick-libmagick-dev-compat</a>, <a href='../libimage-magick-perl'>libimage-magick-perl</a>", "selected" : false},
 		{"name": "pinto", "version" : " (0.97+dfsg-5)", "description" : "application for curating a repository of Perl modules", "selected" : false},
 		{"name": "plsense", "version" : " (0.3.4-1)", "description" : "Omni Completion Tool for Perl", "selected" : false},
 		{"name": "pmuninstall", "version" : " (0.30-3)", "description" : "script to uninstall modules installed from CPAN", "selected" : false},

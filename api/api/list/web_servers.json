@@ -134,7 +134,7 @@
 		{"name": "nghttp2-proxy", "version" : " (1.36.0-2+deb10u1)", "description" : "reverse proxy implementing HTTP/2 protocol", "selected" : false},
 		{"name": "nghttp2-server", "version" : " (1.36.0-2+deb10u1)", "description" : "server implementing HTTP/2 protocol", "selected" : false},
 		{"name": "nginx", "version" : " (1.14.2-2+deb10u3)", "description" : "small, powerful, scalable web/proxy server", "selected" : false},
-		{"name": "nginx", "version" : "", "description" : "virtual package provided by <a href='../nginx-extras'>nginx-extras</a>, <a href='../nginx-light'>nginx-light</a>, <a href='../nginx-full'>nginx-full</a>", "selected" : false},
+		{"name": "nginx", "version" : "", "description" : "virtual package provided by <a href='../nginx-light'>nginx-light</a>, <a href='../nginx-full'>nginx-full</a>, <a href='../nginx-extras'>nginx-extras</a>", "selected" : false},
 		{"name": "nginx-common", "version" : " (1.14.2-2+deb10u3)", "description" : "small, powerful, scalable web/proxy server - common files", "selected" : false},
 		{"name": "nginx-extras", "version" : " (1.14.2-2+deb10u3)", "description" : "nginx web/proxy server (extended version)", "selected" : false},
 		{"name": "nginx-full", "version" : " (1.14.2-2+deb10u3)", "description" : "nginx web/proxy server (standard version)", "selected" : false},
