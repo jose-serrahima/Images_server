@@ -1704,7 +1704,7 @@
 		{"name": "node-zipfile", "version" : " (0.5.12+ds-3)", "description" : "library for handling zipfiles in Node.js", "selected" : false},
 		{"name": "rollup", "version" : " (0.50.0-6)", "description" : "Next-generation ES6 module bundler", "selected" : false},
 		{"name": "uglifyjs", "version" : " (3.4.9-5)", "description" : "JavaScript parser, mangler/compressor and beautifier - CLI tool", "selected" : false},
-		{"name": "uglifyjs", "version" : "", "description" : "virtual package provided by <a href='../uglifyjs'>uglifyjs</a>, <a href='../node-uglify'>node-uglify</a>", "selected" : false},
+		{"name": "uglifyjs", "version" : "", "description" : "virtual package provided by <a href='../node-uglify'>node-uglify</a>, <a href='../uglifyjs'>uglifyjs</a>", "selected" : false},
 		{"name": "webpack", "version" : " (3.5.6-3.1)", "description" : "Packs CommonJs/AMD modules for the browser", "selected" : false},
 		{"name": "yarnpkg", "version" : " (1.13.0-1+deb10u1)", "description" : "Fast, reliable and secure npm alternative", "selected" : false}
 	]

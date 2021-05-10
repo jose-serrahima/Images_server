@@ -215,7 +215,7 @@
 		{"name": "icoutils", "version" : " (0.32.3-2.1)", "description" : "Create and extract MS Windows icons and cursors", "selected" : false},
 		{"name": "iec16022", "version" : " (0.2.4-1.2)", "description" : "Generates 2d ISO/IEC 16022 barcodes (data matrix/semacode)", "selected" : false},
 		{"name": "imagemagick", "version" : " (8:6.9.10.23+dfsg-2.1+deb10u1)", "description" : "image manipulation programs -- binaries", "selected" : false},
-		{"name": "imagemagick", "version" : "", "description" : "virtual package provided by <a href='../graphicsmagick-imagemagick-compat'>graphicsmagick-imagemagick-compat</a>, <a href='../imagemagick-6.q16'>imagemagick-6.q16</a>", "selected" : false},
+		{"name": "imagemagick", "version" : "", "description" : "virtual package provided by <a href='../imagemagick-6.q16'>imagemagick-6.q16</a>, <a href='../graphicsmagick-imagemagick-compat'>graphicsmagick-imagemagick-compat</a>", "selected" : false},
 		{"name": "imagemagick-6-common", "version" : " (8:6.9.10.23+dfsg-2.1+deb10u1)", "description" : "image manipulation programs -- infrastructure", "selected" : false},
 		{"name": "imagemagick-6.q16", "version" : " (8:6.9.10.23+dfsg-2.1+deb10u1)", "description" : "image manipulation programs -- quantum depth Q16", "selected" : false},
 		{"name": "imagemagick-6.q16hdri", "version" : " (8:6.9.10.23+dfsg-2.1+deb10u1)", "description" : "image manipulation programs -- quantum depth Q16HDRI", "selected" : false},

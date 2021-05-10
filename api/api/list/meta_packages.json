@@ -167,7 +167,7 @@
 		{"name": "libreoffice-l10n-in", "version" : " (1:6.1.5-3+deb10u7)", "description" : "office productivity suite -- Indic language packages", "selected" : false},
 		{"name": "libreoffice-l10n-za", "version" : " (1:6.1.5-3+deb10u7)", "description" : "office productivity suite -- South African language packages", "selected" : false},
 		{"name": "live-manual", "version" : " (2:20151217.1)", "description" : "Live Systems Documentation (metapackage)", "selected" : false},
-		{"name": "live-manual", "version" : "", "description" : "virtual package provided by <a href='../live-manual-txt'>live-manual-txt</a>, <a href='../live-manual-odf'>live-manual-odf</a>, <a href='../live-manual-pdf'>live-manual-pdf</a>, <a href='../live-manual-epub'>live-manual-epub</a>, <a href='../live-manual-html'>live-manual-html</a>", "selected" : false},
+		{"name": "live-manual", "version" : "", "description" : "virtual package provided by <a href='../live-manual-html'>live-manual-html</a>, <a href='../live-manual-txt'>live-manual-txt</a>, <a href='../live-manual-pdf'>live-manual-pdf</a>, <a href='../live-manual-odf'>live-manual-odf</a>, <a href='../live-manual-epub'>live-manual-epub</a>", "selected" : false},
 		{"name": "live-task-base", "version" : " (0.7)", "description" : "Live base environment support", "selected" : false},
 		{"name": "live-task-cinnamon", "version" : " (0.7)", "description" : "Live environment support for Cinnamon", "selected" : false},
 		{"name": "live-task-extra", "version" : " (0.7)", "description" : "Live extra environment support", "selected" : false},

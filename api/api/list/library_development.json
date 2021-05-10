@@ -2,7 +2,7 @@
 	"name" : "Library development",
  	"desc" : "Libraries necessary for developers to write programs that use them.",
  	"prog" : [
-		{"name": "389-ds-base-dev", "version" : " (1.4.0.21-1)", "description" : "389 Directory Server suite - development files", "selected" : true},
+		{"name": "389-ds-base-dev", "version" : " (1.4.0.21-1)", "description" : "389 Directory Server suite - development files", "selected" : false},
 		{"name": "android-libadb-dev", "version" : " (1:8.1.0+r23-5)", "description" : "Library for Android Debug Bridge - Development files", "selected" : false},
 		{"name": "android-libandroidfw-dev", "version" : " (1:8.1.0+r23-3)", "description" : "Android utility library - Development files", "selected" : false},
 		{"name": "android-libbacktrace-dev", "version" : " (1:8.1.0+r23-5)", "description" : "Android backtrace library - Development files", "selected" : false},

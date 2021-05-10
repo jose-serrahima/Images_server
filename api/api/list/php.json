@@ -33,7 +33,7 @@
 		{"name": "pear-channels", "version" : " (0~20141011-1)", "description" : "PEAR channels for various projects", "selected" : false},
 		{"name": "phing", "version" : " (2.16.1-1)", "description" : "PHP5 project build system based on Apache Ant", "selected" : false},
 		{"name": "php", "version" : " (2:7.3+69)", "description" : "server-side, HTML-embedded scripting language (default)", "selected" : false},
-		{"name": "php", "version" : "", "description" : "virtual package provided by <a href='../uwsgi-plugin-php'>uwsgi-plugin-php</a>, <a href='../php7.3'>php7.3</a>", "selected" : false},
+		{"name": "php", "version" : "", "description" : "virtual package provided by <a href='../php7.3'>php7.3</a>, <a href='../uwsgi-plugin-php'>uwsgi-plugin-php</a>", "selected" : false},
 		{"name": "php-all-dev", "version" : " (2:69)", "description" : "package depending on all supported PHP development packages", "selected" : false},
 		{"name": "php-amqp", "version" : " (1.9.4-1)", "description" : "AMQP extension for PHP", "selected" : false},
 		{"name": "php-amqplib", "version" : " (2.8.1-1)", "description" : "pure PHP implementation of the AMQP protocol", "selected" : false},
