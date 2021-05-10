@@ -1,0 +1,14 @@
+<div class="grid-container">
+  <div class="menu">
+    <app-sections 
+      (eventSelectSection)="selectSection($event)"
+      (eventUnSelectSection)="unSelectSection($event)">
+    </app-sections>
+  </div>
+  <div class="body">
+    <app-principal 
+      [displayList]="displayList"
+      (eventAddPrograms)="addPrograms($event)" >
+    </app-principal>
+  </div>
+</div>

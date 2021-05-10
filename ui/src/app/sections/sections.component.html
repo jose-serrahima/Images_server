@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li *ngFor="let section of sections">
+            {{ section.name }} <input type="checkbox" (change)="select_section($event, section.name)"/> <br>
+            <a>{{ section.desc }}</a>
+        </li>
+        
+    </ul>
+  </div>

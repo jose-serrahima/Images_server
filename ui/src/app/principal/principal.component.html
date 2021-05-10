@@ -1,0 +1,23 @@
+<div class="content" role="main">
+    <div class="card">
+        <div class="form-group">
+            <label for="search-text">Search Text</label>
+            
+            <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
+            [(ngModel)]="searchText" placeholder="Enter text to search a package" 
+            autofocus>
+            <button (click)="add()">Save</button>
+        </div>
+        <ul class="list-group list-group-flush">
+            <!-- results of ngFor is passed to appFilter with argument searchText -->
+            <li class="list-group-item" *ngFor="let d of displayList">
+                {{d.name}}
+                <ul>
+                    <li *ngFor="let program of d.prog| appFilter: searchText">{{program.name}}
+                        <input type="checkbox" (change)="select_program($event, program.name)" [(ngModel)]="program.selected"/>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
