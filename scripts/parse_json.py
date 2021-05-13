@@ -1,7 +1,6 @@
-#!/usr/bin/python
 import json
 
-f = open('/home/serra/Tmp/Scripts/prueba.json',)
+f = open('file.json',)
 data = json.load(f)
 
 for i in data['bloques']:
