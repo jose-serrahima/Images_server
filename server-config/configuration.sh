@@ -30,7 +30,8 @@ path=~/bin/node/bin
 file=~/.profile
 echo $PATH | grep -q "\(^\|:\)$path\(:\|/\{0,1\}$\)" || echo "PATH=\$PATH:$path" >> "$file";
 
-source "$file"
 
 echo "Installing Angular/cli"
 npm install -g @angular/cli
+
+echo "Remember reloading your ~/.profile in order to get system works"
