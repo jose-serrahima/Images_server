@@ -11,12 +11,14 @@ if  [ ! -d ~/tmp ]; then
 fi
 
 # Download node 14.16.1
+if [ ! -d ~/bin/node ]; then
+	echo "Downloading Node"
+	wget https://nodejs.org/dist/v14.16.1/node-v14.16.1-linux-x64.tar.xz -P ~/tmp
+	tar -xf ~/tmp/node-v14.16.1-linux-x64.tar.xz -C ~/tmp/
+	mv ~/tmp/node-v14.16.1-linux-x64 ~/bin/node
+	rm -rf ~/tmp
+fi
 
-echo "Downloading Node"
-wget https://nodejs.org/dist/v14.16.1/node-v14.16.1-linux-x64.tar.xz -P ~/tmp
-tar -xf ~/tmp/node-v14.16.1-linux-x64.tar.xz -C ~/tmp/
-mv ~/tmp/node-v14.16.1-linux-x64 ~/bin/node
-rm -rf ~/tmp
 echo "tmp folder deleted"
 
 # Check if .profile exist
