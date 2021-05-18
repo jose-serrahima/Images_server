@@ -1,9 +1,9 @@
 <div>
+    <label class="title">Sections</label>
     <ul>
-        <li *ngFor="let section of sections">
-            {{ section.name }} <input type="checkbox" (change)="select_section($event, section.name)"/> <br>
-            <a>{{ section.desc }}</a>
-        </li>
-        
+        <li *ngFor="let section of sections" title="{{ section.desc }}">
+            <label>
+            {{ section.name }}</label> <input type="checkbox" (change)="select_section($event, section.name)"/> <br>
+        </li>        
     </ul>
   </div>
