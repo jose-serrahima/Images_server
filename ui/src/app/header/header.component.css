@@ -1,0 +1,7 @@
+.menu_option{
+    width: 8em;
+    float: left;
+    text-align: center;
+    border: 1px black solid;
+    padding: 1em;
+}

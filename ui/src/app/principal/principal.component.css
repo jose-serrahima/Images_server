@@ -1,3 +1,15 @@
 ul{
     text-align: left;
-  }
+}
+
+button{
+  margin-left: 2em;
+}
+
+.title{
+  font-size: x-large;
+}
+
+.form-control{
+  margin-top: 14px;
+}

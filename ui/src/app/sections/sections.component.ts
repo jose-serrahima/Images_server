@@ -21,7 +21,10 @@ export class SectionsComponent implements OnInit {
 
   getFilters():void{
     this.programsService.get_sections()
-      .subscribe(sections => this.sections = sections);
+      .subscribe(sections => {
+        sections.sort((a,b) => a.name.localeCompare(b.name));
+        this.sections = sections
+      });        
   }
 
   select_section(e:any, sectionName: String):void{

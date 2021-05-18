@@ -7,14 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { SectionsComponent } from './sections/sections.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { FilterPipe } from './filter.pipe'
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     SectionsComponent,
     PrincipalComponent,
-    FilterPipe
+    FilterPipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
