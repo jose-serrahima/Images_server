@@ -6,7 +6,7 @@
             <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
             [(ngModel)]="searchText" placeholder="Enter text to search a package" 
             autofocus>
-            <button (click)="add()">Save</button>
+            <button (click)="add()" *ngIf="displayList.length > 0">Save</button>
         </div>
         <ul class="list-group list-group-flush">
             <!-- results of ngFor is passed to appFilter with argument searchText -->
