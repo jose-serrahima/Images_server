@@ -8,7 +8,8 @@ import { SectionsComponent } from './sections/sections.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { FilterPipe } from './filter.pipe'
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header/header.component'; 
+import { HeaderComponent } from './header/header.component';
+import { SummaryComponent } from './summary/summary.component'; 
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     SectionsComponent,
     PrincipalComponent,
     FilterPipe,
-    HeaderComponent
+    HeaderComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
