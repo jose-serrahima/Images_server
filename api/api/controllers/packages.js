@@ -1,3 +1,5 @@
+const { Console } = require('console');
+
 // Add package to file
 exports.add_item = function (req, res){
 
@@ -30,24 +32,37 @@ exports.delete_item = function (req, res){
 }
 
 exports.add_package = function (req, res){
-    let folder =req.param.folder;
-
+    const path = require('path');
     fs = require('fs')
-    fs.writeFile("asdf.tx", "JSON.stringify(req.body)", function (err,data) {
+    
+    let folder =req.params.folder;
+    let file = req.body.name.toLowerCase().replace(' ', '_')+".json";
+    let rootPath = "../../../configuration";
+    let configurationPath = path.join(__dirname, rootPath);
+    let folderPath = path.join(__dirname, rootPath, folder);
+    let filePath = path.join(__dirname, rootPath,folder, file);
+    
+    if (!fs.existsSync(configurationPath)) {
+        fs.mkdir(configurationPath, (err) => {
+            if (err) {
+                res.json("Problem creating your folder configuration");
+            }
+        });
+    } 
+
+    if (!fs.existsSync(folderPath)){
+        fs.mkdir(folderPath, (err) => {
+            if (err){
+                res.json("Problem creating your custom folder");
+            }
+        })
+    }
+
+    fs.writeFile(filePath, JSON.stringify(req.body), function (err,data) {
         if (err) {
-            res.json('ko');
+            res.json('Probelm writing file ' + file);
         }
     });
 
-
-    res.json('ok')
-    /*var directory=req.params.folder
-
-
-
-    Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {
-    if (err)
-      res.send(err);
-    res.json(task);
-  });*/
+    res.json('ok');
 }

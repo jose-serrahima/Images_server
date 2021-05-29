@@ -21,5 +21,5 @@ module.exports = function(app) {
     .get(configuration.get_folder);
 
   app.route('/folder/:folder')
-    .post(packages.add_package);
+    .put(packages.add_package);
 };
