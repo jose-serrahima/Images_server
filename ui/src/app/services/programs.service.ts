@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
-import { Program } from '../program';
 import { Package } from '../package'
 import { Section } from '../section';
 
@@ -34,10 +33,20 @@ export class ProgramsService {
     return this.http.get<String>(this.url+'folder');
   }
 
-  add_packages(pack: Package[], folder: String) {
-    pack.forEach(p => {
-      console.log ("llamando al servicio con p= " + p.name)
-      this.http.post<Package>(this.url + 'folder/' + folder , p, httpOptions)
-    });    
+  add_packages(pack: Package, folder: String) {
+    console.log("llamo al servicio");
+    console.log(this.url + 'folder/' + folder);
+    //return this.http.post<Package>(this.url + 'folder/' + folder , JSON.stringify(pack), httpOptions);
+    return this.http.put<Package>(this.url + 'folder/' + folder , pack, httpOptions).subscribe(
+      val => {
+        console.log("respuesta " +val);
+      },
+      response => {
+          console.log("PUT call in error", response);
+      }
+      /*() => {
+          console.log("The PUT observable is now completed.");
+      }*/
+    );
   }
 }

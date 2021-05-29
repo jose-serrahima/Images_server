@@ -26,14 +26,9 @@ export class AppComponent implements OnInit{
   ngOnInit() { }
 
   selectSection(name: String){
-    if (this.control) {
-      console.log("Se ha grabado anteriormente algo")
-    } else {
-      this.programsService.get_programs(name).subscribe( pack =>{
-        this.displayList.push(pack);
-      });
-    }
-    
+    this.programsService.get_programs(name).subscribe( pack =>{
+      this.displayList.push(pack);
+    });    
   }
 
   unSelectSection(name: String){
@@ -46,15 +41,24 @@ export class AppComponent implements OnInit{
 
   addPrograms(packages: Package[]){
     if (this.control) {
-      this.programsService.add_packages(packages, this.folder);
-    } else {      
+      packages.forEach(p => {
+          console.log("llamando a la carpeta "+ this.folder +" con el paquete "+ p.name);
+          this.programsService.add_packages(p, this.folder);
+      });
+    } else {    
+      
+      /*packages.forEach(p => {
+        this.programsService.add_packages(p, 'asdf');
+      });*/
+      
       this.control = true;
       this.programsService.get_folder().subscribe(
         folder => {
-          console.log("la carpeta :" + folder );
-          console.log(packages)
-          this.programsService.add_packages(packages, folder);
           this.folder = folder;
+          packages.forEach(p => {
+            console.log("llamando a la carpeta "+ folder +" con el paquete "+ p.name);
+            this.programsService.add_packages(p, folder);
+          });
         }
       );
     }        
