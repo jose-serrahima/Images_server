@@ -5,7 +5,7 @@ import os
 # and creates end files ready for start execution
 
 # Change directory to read from here
-directory = r'../'
+directory = r'../configuration'
 
 for filename in os.listdir(directory):
 	if filename.endswith(".json"):
