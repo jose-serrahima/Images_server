@@ -83,7 +83,7 @@
 		{"name": "libfsapfs-utils", "version" : " (20190210-1)", "description" : "APFS access library -- Utilities", "selected" : false},
 		{"name": "libfsntfs-utils", "version" : " (20190104-1)", "description" : "NTFS access library -- Utilities", "selected" : false},
 		{"name": "libfvde-utils", "version" : " (20190104-1)", "description" : "FileVault Drive Encryption access library -- Utilities", "selected" : false},
-		{"name": "libhivex-bin", "version" : " (1.3.18-1)", "description" : "utilities for reading and writing Windows Registry hives", "selected" : false},
+		{"name": "libhivex-bin", "version" : " (1.3.18-1+deb10u1) [security]", "description" : "utilities for reading and writing Windows Registry hives", "selected" : false},
 		{"name": "liblnk-utils", "version" : " (20181227-1)", "description" : "Windows Shortcut File format access library -- Utilities", "selected" : false},
 		{"name": "libmsiecf-utils", "version" : " (20181227-1)", "description" : "Microsoft Internet Explorer Cache File access library -- Utilities", "selected" : false},
 		{"name": "libolecf-utils", "version" : " (20181231-1)", "description" : "OLE2 Compound File format access library -- Utilities", "selected" : false},

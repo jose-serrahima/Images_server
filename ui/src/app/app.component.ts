@@ -2,8 +2,8 @@ import { Component,OnInit} from '@angular/core';
 
 import { ProgramsService } from './services/programs.service';
 
-import { Program } from './program';
-import { Package } from './package';
+import { Program } from './interfaces/program';
+import { Package } from './interfaces/package';
 
 
 @Component({
@@ -42,25 +42,30 @@ export class AppComponent implements OnInit{
   addPrograms(packages: Package[]){
     if (this.control) {
       packages.forEach(p => {
-          console.log("llamando a la carpeta "+ this.folder +" con el paquete "+ p.name);
           this.programsService.add_packages(p, this.folder);
       });
     } else {    
-      
-      /*packages.forEach(p => {
-        this.programsService.add_packages(p, 'asdf');
-      });*/
-      
       this.control = true;
       this.programsService.get_folder().subscribe(
         folder => {
           this.folder = folder;
           packages.forEach(p => {
-            console.log("llamando a la carpeta "+ folder +" con el paquete "+ p.name);
             this.programsService.add_packages(p, folder);
           });
         }
       );
     }        
+  }
+
+  execute(){
+    if (this.control){
+      this.programsService.execute(this.folder).subscribe( res => {
+        if ("ok" == res){
+          window.open('http://localhost:8080', "_blank");
+        }
+      });   
+    } else {
+      console.log("There's no config");
+    }    
   }
 }

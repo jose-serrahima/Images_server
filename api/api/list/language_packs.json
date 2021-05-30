@@ -32,7 +32,7 @@
 		{"name": "calligra-l10n-uk", "version" : " (1:3.1.0+dfsg-5)", "description" : "dummy empty package", "selected" : false},
 		{"name": "calligra-l10n-zhcn", "version" : " (1:3.1.0+dfsg-5)", "description" : "dummy empty package", "selected" : false},
 		{"name": "calligra-l10n-zhtw", "version" : " (1:3.1.0+dfsg-5)", "description" : "dummy empty package", "selected" : false},
-		{"name": "chromium-l10n", "version" : " (90.0.4430.93-1~deb10u1) [security]", "description" : "web browser - language packs", "selected" : false},
+		{"name": "chromium-l10n", "version" : " (90.0.4430.212-1~deb10u1) [security]", "description" : "web browser - language packs", "selected" : false},
 		{"name": "cinnamon-l10n", "version" : " (3.8.2-1)", "description" : "Translation files for the Cinnamon desktop", "selected" : false},
 		{"name": "claws-mail-i18n", "version" : " (3.17.3-2)", "description" : "Locale data for Claws Mail (i18n support)", "selected" : false},
 		{"name": "compton-conf-l10n", "version" : " (0.14.1-1)", "description" : "Language package for compton-conf", "selected" : false},
