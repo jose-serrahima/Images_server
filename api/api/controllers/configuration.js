@@ -10,4 +10,5 @@ exports.get_folder = function (req, res){
 	let name= date+month+year+hours+minutes+seconds;
 
 	res.json(name);
+	return;
 }
