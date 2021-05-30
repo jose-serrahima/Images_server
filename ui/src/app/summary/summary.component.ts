@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-summary',
@@ -9,11 +9,13 @@ export class SummaryComponent implements OnInit {
 
   constructor() { }
 
+  @Output() eventExecute = new EventEmitter();
+
   ngOnInit(): void {
   }
 
   execute(){
-    
+      this.eventExecute.emit();
   }
 
 }

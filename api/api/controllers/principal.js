@@ -12,5 +12,23 @@ exports.get_package_list = function (req, res){
 
 // Start execution
 exports.execute = function (req, res){
+	const { exec } = require("child_process");
+	const path = require('path');
 
+    let folder =req.params.folder;
+
+    let gotty = path.join(__dirname, "../../../tools/gotty");
+
+	exec(gotty+" -w --once ../tools/Bash_scripts/start_execution.sh " + folder, (error, stdout, stderr) => {
+	    if (error) {
+	        console.log(`error: ${error.message}`);
+	        return;
+	    }
+	    if (stderr) {
+	        console.log(`stderr: ${stderr}`);
+	        return;
+	    }
+	    console.log(`stdout: ${stdout}`);
+	});
+    res.json("ok");
 }

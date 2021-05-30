@@ -41,28 +41,49 @@ exports.add_package = function (req, res){
     let configurationPath = path.join(__dirname, rootPath);
     let folderPath = path.join(__dirname, rootPath, folder);
     let filePath = path.join(__dirname, rootPath,folder, file);
-    
+
     if (!fs.existsSync(configurationPath)) {
-        fs.mkdir(configurationPath, (err) => {
+        fs.mkdirSync(configurationPath, (err) => {
             if (err) {
-                res.json("Problem creating your folder configuration");
+                return res.json("Problem creating your folder configuration");
             }
         });
-    } 
+    }
 
     if (!fs.existsSync(folderPath)){
-        fs.mkdir(folderPath, (err) => {
+        fs.mkdirSync(folderPath, (err) => {
             if (err){
-                res.json("Problem creating your custom folder");
+                return res.json("Problem creating your custom folder");
             }
         })
     }
 
     fs.writeFile(filePath, JSON.stringify(req.body), function (err,data) {
         if (err) {
-            res.json('Probelm writing file ' + file);
+            return res.json('Probelm writing file ' + file);
         }
     });
 
-    res.json('ok');
+    return res.json('ok');
+}
+
+exports.update_package_list = function(req,res){
+
+	const { exec } = require("child_process");
+	const path = require('path');    
+
+    let gotty = path.join(__dirname, "../../../tools/gotty");
+	
+    exec(gotty+" -w --once ../tools/Bash_scripts/update_packages.sh ", (error, stdout, stderr) => {
+	    if (error) {
+	        console.log(`error: ${error.message}`);
+	        return res.json('ko');
+	    }
+	    if (stderr) {
+	        console.log(`stderr: ${stderr}`);
+	        return res.json('ko');
+	    }
+	    console.log(`stdout: ${stdout}`);
+	});
+	res.json('ok');
 }

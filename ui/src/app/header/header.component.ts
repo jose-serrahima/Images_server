@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProgramsService } from '../services/programs.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private programsService: ProgramsService) { }
 
   ngOnInit(): void {
   }
 
+  update_packages_list(){
+    this.programsService.update_packages_list().subscribe( res => {
+      if ("ok" == res){
+        window.open('http://localhost:8080', "_blank");
+      }
+    });    
+  }
 }

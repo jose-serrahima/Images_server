@@ -74,7 +74,7 @@
 		{"name": "iverilog", "version" : " (10.2-1.1)", "description" : "Icarus verilog compiler", "selected" : false},
 		{"name": "kicad", "version" : " (5.0.2+dfsg1-1)", "description" : "Electronic schematic and PCB design software", "selected" : false},
 		{"name": "kicad-common", "version" : " (5.0.2+dfsg1-1)", "description" : "Old common files used by kicad - Transitional Package", "selected" : false},
-		{"name": "kicad-common", "version" : "", "description" : "virtual package provided by <a href='../kicad-demos'>kicad-demos</a>, <a href='../kicad-libraries'>kicad-libraries</a>", "selected" : false},
+		{"name": "kicad-common", "version" : "", "description" : "virtual package provided by <a href='../kicad-libraries'>kicad-libraries</a>, <a href='../kicad-demos'>kicad-demos</a>", "selected" : false},
 		{"name": "kicad-demos", "version" : " (5.0.2+dfsg1-1)", "description" : "Demo projects for kicad", "selected" : false},
 		{"name": "kicad-doc-de", "version" : " (5.0.2+dfsg1-1)", "description" : "Kicad help files (German)", "selected" : false},
 		{"name": "kicad-doc-en", "version" : " (5.0.2+dfsg1-1)", "description" : "Kicad help files (English)", "selected" : false},

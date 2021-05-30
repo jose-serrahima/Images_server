@@ -185,7 +185,7 @@
 		{"name": "graphicsmagick", "version" : " (1.4+really1.3.35-1~deb10u1)", "description" : "collection of image processing tools", "selected" : false},
 		{"name": "graphicsmagick-imagemagick-compat", "version" : " (1.4+really1.3.35-1~deb10u1)", "description" : "image processing tools providing ImageMagick interface", "selected" : false},
 		{"name": "graphicsmagick-libmagick-dev-compat", "version" : " (1.4+really1.3.35-1~deb10u1)", "description" : "image processing libraries providing ImageMagick interface", "selected" : false},
-		{"name": "graphviz", "version" : " (2.40.1-6)", "description" : "rich set of graph drawing tools", "selected" : false},
+		{"name": "graphviz", "version" : " (2.40.1-6+deb10u1) [security]", "description" : "rich set of graph drawing tools", "selected" : false},
 		{"name": "gstreamer1.0-espeak", "version" : " (0.5.0-1)", "description" : "GStreamer plugin for eSpeak speech synthesis", "selected" : false},
 		{"name": "gstreamer1.0-gtk3", "version" : " (1.14.4-1+deb10u1) [security]", "description" : "GStreamer plugin for GTK+3", "selected" : false},
 		{"name": "gstreamer1.0-qt5", "version" : " (1.14.4-1+deb10u1) [security]", "description" : "GStreamer plugin for Qt5", "selected" : false},

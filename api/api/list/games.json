@@ -1159,7 +1159,7 @@
 		{"name": "wordwarvi", "version" : " (1.00+dfsg1-4)", "description" : "retro-styled side-scrolling shoot&#39;em up arcade game", "selected" : false},
 		{"name": "wordwarvi-sound", "version" : " (1.00+dfsg1-4)", "description" : "retro-styled side-scrolling shoot&#39;em up arcade game [Sound Files]", "selected" : false},
 		{"name": "xabacus", "version" : " (8.2.1-1)", "description" : "simulation of the ancient calculator (plain X version)", "selected" : false},
-		{"name": "xabacus", "version" : "", "description" : "virtual package provided by <a href='../xmabacus'>xmabacus</a>, <a href='../xabacus'>xabacus</a>", "selected" : false},
+		{"name": "xabacus", "version" : "", "description" : "virtual package provided by <a href='../xabacus'>xabacus</a>, <a href='../xmabacus'>xmabacus</a>", "selected" : false},
 		{"name": "xball", "version" : " (3.0.1-2)", "description" : "Simulate bouncing balls in a window", "selected" : false},
 		{"name": "xbill", "version" : " (2.1-8+b2)", "description" : "Get rid of those Wingdows Viruses!", "selected" : false},
 		{"name": "xblast-tnt", "version" : " (2.10.4-4+b1)", "description" : "multiplayer blast-the-others game inspired by Dynablaster", "selected" : false},

@@ -14,7 +14,7 @@
                 {{d.name}}
                 <ul>
                     <li *ngFor="let program of d.prog| appFilter: searchText">{{program.name}}
-                        <input type="checkbox" (change)="select_program($event, program.name)" [(ngModel)]="program.selected"/>
+                        <input type="checkbox" [(ngModel)]="program.selected"/>
                     </li>
                 </ul>
             </li>

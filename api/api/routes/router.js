@@ -14,8 +14,11 @@ module.exports = function(app) {
     .post(packages.add_item)
     .delete(packages.delete_item);
   
-  app.route('/execute')
-    .post(principal.execute);
+  app.route('/execute/:folder')
+    .put(principal.execute);
+
+  app.route('/execute_update')
+    .put(packages.update_package_list);
 
   app.route('/folder')
     .get(configuration.get_folder);

@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ProgramsService } from '../services/programs.service';
-import { Section } from '../section';
+import { Section } from '../interfaces/section';
 
 @Component({
   selector: 'app-sections',

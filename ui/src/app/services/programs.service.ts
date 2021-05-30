@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { Package } from '../package'
-import { Section } from '../section';
+import { Package } from '../interfaces/package'
+import { Section } from '../interfaces/section';
 
 const httpOptions = {
 	headers: new HttpHeaders({
@@ -34,19 +34,14 @@ export class ProgramsService {
   }
 
   add_packages(pack: Package, folder: String) {
-    console.log("llamo al servicio");
-    console.log(this.url + 'folder/' + folder);
-    //return this.http.post<Package>(this.url + 'folder/' + folder , JSON.stringify(pack), httpOptions);
-    return this.http.put<Package>(this.url + 'folder/' + folder , pack, httpOptions).subscribe(
-      val => {
-        console.log("respuesta " +val);
-      },
-      response => {
-          console.log("PUT call in error", response);
-      }
-      /*() => {
-          console.log("The PUT observable is now completed.");
-      }*/
-    );
+    return this.http.put<Package>(this.url + 'folder/' + folder , pack, httpOptions).subscribe();
+  }
+
+  execute(folder: String): Observable<String>{
+    return this.http.put<string>(this.url + 'execute/'+folder, '', httpOptions);
+  }
+
+  update_packages_list(): Observable<String>{
+    return this.http.put<string>(this.url + 'execute_update', '', httpOptions);
   }
 }

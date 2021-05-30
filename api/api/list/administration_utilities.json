@@ -2,7 +2,7 @@
 	"name" : "Administration Utilities",
  	"desc" : "Utilities to administer system resources, manage user accounts, etc.",
  	"prog" : [
-		{"name": "0install", "version" : " (2.12.3-2)", "description" : "cross-distribution packaging system", "selected" : true},
+		{"name": "0install", "version" : " (2.12.3-2)", "description" : "cross-distribution packaging system", "selected" : false},
 		{"name": "0install-core", "version" : " (2.12.3-2)", "description" : "cross-distribution packaging system (non-GUI parts)", "selected" : false},
 		{"name": "9mount", "version" : " (1.3+hg20170412-1)", "description" : "Plan 9 filesystem (v9fs) user mount utilities", "selected" : false},
 		{"name": "abootimg", "version" : " (0.6-1+b2)", "description" : "Tool to read/write/update android boot images", "selected" : false},
@@ -571,7 +571,7 @@
 		{"name": "idle3-tools", "version" : " (0.9.1-2)", "description" : "change the idle3 timer of recent Western Digital Hard Disk Drives", "selected" : false},
 		{"name": "idlestat", "version" : " (0.8-2)", "description" : "measure CPU time in idle and operating states", "selected" : false},
 		{"name": "ifupdown", "version" : " (0.8.35)", "description" : "high level tools to configure network interfaces", "selected" : false},
-		{"name": "ifupdown", "version" : "", "description" : "virtual package provided by <a href='../netscript-2.4'>netscript-2.4</a>, <a href='../ifupdown2'>ifupdown2</a>", "selected" : false},
+		{"name": "ifupdown", "version" : "", "description" : "virtual package provided by <a href='../ifupdown2'>ifupdown2</a>, <a href='../netscript-2.4'>netscript-2.4</a>", "selected" : false},
 		{"name": "ifupdown-extra", "version" : " (0.28)", "description" : "Network scripts for ifupdown", "selected" : false},
 		{"name": "ifupdown-multi", "version" : " (0.1.1)", "description" : "multiple default gateway support for ifupdown", "selected" : false},
 		{"name": "ifupdown2", "version" : " (1.2.5-1)", "description" : "Network Interface Management tool similar to ifupdown", "selected" : false},

@@ -5,3 +5,8 @@
     border: 1px black solid;
     padding: 1em;
 }
+
+button{
+    float: right;
+    margin-bottom: 1em;
+}
