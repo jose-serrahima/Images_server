@@ -2,6 +2,6 @@
 
 echo "RUN WITH SUDO"
 
-apt install curl wget net-tools tomcat9 tomcat9-admin -y
+apt install curl wget net-tools -y
 
 echo "Installation finished"
