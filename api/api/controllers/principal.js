@@ -20,6 +20,7 @@ exports.execute = function (req, res){
     let folder =req.params.folder;
 
     let gotty = path.join(__dirname, "../../../tools/gotty");
+	let ret ='ok'
 
 	exec(gotty+" -w --once ../tools/Bash_scripts/start_execution.sh " + folder, (error, stdout, stderr) => {
 	    if (error) {
