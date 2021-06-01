@@ -38,7 +38,7 @@ fi
 
 echo '*** Ensuring system has all needed packages ***'
 dlc='../debian-live-config/'
-cd dlc;
+cd $dlc;
 make install_buildenv;
 echo '*** Intallation finished ***'
 

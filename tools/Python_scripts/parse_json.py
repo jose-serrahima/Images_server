@@ -6,7 +6,7 @@ import sys
 # and creates end files ready for start execution
 
 # Change directory to read from here
-directory = r'../configuration/'+str(sys.argv[1])
+directory = r'../../configuration/'+str(sys.argv[1])
 
 for filename in os.listdir(directory):
 	if filename.endswith(".json"):
@@ -32,10 +32,10 @@ for filename in os.listdir(directory2):
 		continue
 
 # Remove old files
-directory3 = r'../debian-live-config/config/package-lists/'
+directory3 = r'../../debian-live-config/config/package-lists/'
 for filename in os.listdir(directory3):
 	if filename.endswith(".list.chroot"):
-		os.remove(filename)
+		os.remove(os.path.join(directory3+filename))
 
 # Move files to destination
 for filename in os.listdir(directory2):
