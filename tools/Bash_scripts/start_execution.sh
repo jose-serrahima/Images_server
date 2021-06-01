@@ -36,13 +36,16 @@ update-alternatives --set x-session-manager /usr/bin/gnome-session' > '../debian
 	fi
 fi 
 
-
-
-
+echo '*** Ensuring system has all needed packages ***'
+dlc='../debian-live-config/'
+cd dlc;
+make install_buildenv;
+echo '*** Intallation finished ***'
 
 
 echo "*** Clean directory ***"
+make clean;
 echo "*** Directory cleaned ***"
-
 echo "*** Building directory ***"
+make build;
 echo "*** Building finished ***"

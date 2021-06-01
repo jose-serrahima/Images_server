@@ -31,8 +31,13 @@ for filename in os.listdir(directory2):
 	else:
 		continue
 
-# Move files to destination
+# Remove old files
 directory3 = r'../debian-live-config/config/package-lists/'
+for filename in os.listdir(directory3):
+	if filename.endswith(".list.chroot"):
+		os.remove(filename)
+
+# Move files to destination
 for filename in os.listdir(directory2):
 	if filename.endswith(".list.chroot"):
 		os.rename(os.path.join('./'+filename), os.path.join(directory3+filename))
