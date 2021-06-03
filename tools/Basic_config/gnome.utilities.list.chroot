@@ -1,0 +1,5 @@
+# System utilities
+#GNOME
+dconf-gsettings-backend
+dconf-editor
+dconf-cli

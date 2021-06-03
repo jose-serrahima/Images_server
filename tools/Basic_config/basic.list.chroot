@@ -1,0 +1,64 @@
+#Section: Shell & basic utilities
+bash
+bash-completion
+sed
+util-linux
+util-linux-locales
+whiptail
+moreutils
+less
+asciinema
+dialog
+manpages
+
+#Section: Packaging
+debhelper
+autoconf
+devscripts
+dh-make
+equivs
+build-essential
+checkinstall
+fakeroot
+debconf-utils
+lintian
+
+#Section: Live system components
+live-boot
+live-config
+live-config-systemd
+user-setup
+live-tools
+eject
+
+#Section: Package management
+apt-listchanges
+apt-transport-https
+aptitude
+debian-archive-keyring
+debian-keyring
+packagekit
+packagekit-tools
+
+#Section: Kernel/boot/init
+#if ARCHITECTURES amd64
+linux-headers-amd64
+#endif
+#if ARCHITECTURES i386
+linux-headers-686:i386
+#endif
+module-assistant
+dkms
+build-essential
+systemd
+os-prober
+initramfs-tools
+console-setup
+user-setup
+libpam-systemd
+
+#Section: Firmwares
+firmware-linux-free
+firmware-linux-nonfree
+amd64-microcode
+intel-microcode
