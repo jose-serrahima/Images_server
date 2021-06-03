@@ -35,7 +35,7 @@ update-alternatives --set x-session-manager /usr/bin/gnome-session' > '../debian
 fi 
 
 echo '*** Coping basic configuration ***'
-cp '../tools/Basic_config/00-important.list.chroot ../debian-live-config/config/package-lists/'
+cp '../tools/Basic_config/00-important.list.chroot' '../debian-live-config/config/package-lists/'
 cp '../tools/Basic_config/00-required.list.chroot' '../debian-live-config/config/package-lists/'
 cp '../tools/Basic_config/basic.list.chroot' '../debian-live-config/config/package-lists/'
 cp '../tools/Basic_config/installet.list.binary' '../debian-live-config/config/package-lists/'
