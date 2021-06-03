@@ -34,8 +34,7 @@ for filename in os.listdir(directory2):
 # Remove old files
 directory3 = r'../debian-live-config/config/package-lists/'
 for filename in os.listdir(directory3):
-	if filename.endswith(".list.chroot"):
-		os.remove(os.path.join(directory3+filename))
+	os.remove(os.path.join(directory3+filename))
 
 # Move files to destination
 for filename in os.listdir(directory2):
