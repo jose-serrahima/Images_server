@@ -38,7 +38,7 @@ echo '*** Coping basic configuration ***'
 cp '../tools/Basic_config/00-important.list.chroot' '../debian-live-config/config/package-lists/'
 cp '../tools/Basic_config/00-required.list.chroot' '../debian-live-config/config/package-lists/'
 cp '../tools/Basic_config/basic.list.chroot' '../debian-live-config/config/package-lists/'
-cp '../tools/Basic_config/installet.list.binary' '../debian-live-config/config/package-lists/'
+cp '../tools/Basic_config/installer.list.binary' '../debian-live-config/config/package-lists/'
 echo '*** End basic configuration ***'
 
 #echo '*** Ensuring system has all needed packages ***'
