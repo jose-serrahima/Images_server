@@ -1,0 +1,38 @@
+#Title: Networ
+
+#Section: Downloaders/web crawlers
+curl
+wget
+
+
+
+
+
+#Section: Network management
+#Description: network-manager-gnome
+network-manager-gnome
+network-manager-openvpn-gnome
+dnsmasq-base
+hostname
+bridge-utils
+ethtool
+
+
+
+
+#Section: Wireless
+#Description: blueman
+blueman
+bluetooth
+crda
+wireless-regdb
+
+
+
+
+#Section: Network diagnostic/monitoring
+#Description: gnome-nettool
+gnome-nettool
+traceroute
+dnsutils
+
