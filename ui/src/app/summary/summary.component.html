@@ -1,3 +1,11 @@
 <label for="search-text" class="title">Summary</label>
 
+<p>Please select Iso type:</p>
+<div>
+    <input type="radio" id="iso" [(ngModel)]="type" value="iso">
+    <label for="iso">Iso</label><br>
+    <input type="radio" id="live" [(ngModel)]="type" value="live">
+    <label for="live">Live</label><br>
+</div>
+
 <button (click)="execute()" title="Press to start building creation">Execute</button>

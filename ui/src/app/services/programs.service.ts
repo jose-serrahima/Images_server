@@ -37,8 +37,8 @@ export class ProgramsService {
     return this.http.put<Package>(this.url + 'folder/' + folder , pack, httpOptions).subscribe();
   }
 
-  execute(folder: String): Observable<String>{
-    return this.http.put<string>(this.url + 'execute/'+folder, '', httpOptions);
+  execute(folder: String, type:String): Observable<String>{
+    return this.http.put<string>(this.url + 'execute/'+folder+'/type/'+type, '', httpOptions);
   }
 
   update_packages_list(): Observable<String>{

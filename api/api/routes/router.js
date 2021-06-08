@@ -14,7 +14,7 @@ module.exports = function(app) {
     .post(packages.add_item)
     .delete(packages.delete_item);
   
-  app.route('/execute/:folder')
+  app.route('/execute/:folder/type/:type')
     .put(principal.execute);
 
   app.route('/execute_update')
