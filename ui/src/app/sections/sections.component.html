@@ -1,7 +1,10 @@
 <div>
     <label class="title">Sections</label>
+    <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
+            [(ngModel)]="searchText" placeholder="Enter text to search a package" 
+            autofocus>
     <ul>
-        <li *ngFor="let section of sections" title="{{ section.desc }}">
+        <li *ngFor="let section of sections | appFilterSection: searchText " title="{{ section.desc }}">
             <label>
             {{ section.name }}</label> <input type="checkbox" (change)="select_section($event, section.name)"/> <br>
         </li>        

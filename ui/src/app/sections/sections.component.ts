@@ -10,6 +10,7 @@ import { Section } from '../interfaces/section';
 export class SectionsComponent implements OnInit {
 
   public sections:Section[]=[];
+  searchText = '';  
   @Output() eventSelectSection = new EventEmitter<String>();
   @Output() eventUnSelectSection = new EventEmitter<String>();
 

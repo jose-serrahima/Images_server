@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SectionsComponent } from './sections/sections.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { FilterPipe } from './filter.pipe'
+import { FilterSectionPipe } from './filter_section.pipe'
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { SummaryComponent } from './summary/summary.component'; 
@@ -17,6 +18,7 @@ import { SummaryComponent } from './summary/summary.component';
     SectionsComponent,
     PrincipalComponent,
     FilterPipe,
+    FilterSectionPipe,
     HeaderComponent,
     SummaryComponent
   ],

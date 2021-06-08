@@ -1,9 +1,8 @@
 <div class="content" role="main">
     <div class="card">
         <div class="form-group">
-            <label for="search-text" class="title">Search Text</label>
-            <br>
-            <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
+            <label for="search-text" class="title">Packages</label>
+            <input type="text" class="save" id="search-text" aria-describedby="search-text" 
             [(ngModel)]="searchText" placeholder="Enter text to search a package" 
             autofocus>
             <button (click)="add()" *ngIf="displayList.length > 0">Save</button>
@@ -13,7 +12,7 @@
             <li class="list-group-item" *ngFor="let d of displayList">
                 {{d.name}}
                 <ul>
-                    <li *ngFor="let program of d.prog| appFilter: searchText">{{program.name}}
+                    <li *ngFor="let program of d.prog| appFilter: searchText" title="{{ program.description }}">{{program.name}}
                         <input type="checkbox" [(ngModel)]="program.selected"/>
                     </li>
                 </ul>

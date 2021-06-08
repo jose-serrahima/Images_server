@@ -12,3 +12,7 @@ ul{
 .title{
     font-size: x-large;
 }
+
+input{
+    margin-left: 2em;
+}

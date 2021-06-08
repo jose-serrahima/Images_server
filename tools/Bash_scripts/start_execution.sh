@@ -11,8 +11,6 @@ python3 '../tools/Python_scripts/parse_json.py' $folder;
 
 echo "*** Files parsed ***"
 
-
-
 tasks='../debian-live-config/config/package-lists/tasks.json.list.chroot'
 
 if [ -f "$tasks" ]; then
