@@ -3,5 +3,7 @@
 }
 
 button{
-    margin-left: 2em;
-  }
+    
+    margin-top: 2em;
+    float: right;
+}

@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class SummaryComponent implements OnInit {
 
   constructor() { }
+  type: String = 'iso';
 
   @Output() eventExecute = new EventEmitter();
 
@@ -15,7 +16,7 @@ export class SummaryComponent implements OnInit {
   }
 
   execute(){
-      this.eventExecute.emit();
+      this.eventExecute.emit(this.type);
   }
 
 }

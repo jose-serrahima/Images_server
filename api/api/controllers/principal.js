@@ -18,11 +18,14 @@ exports.execute = function (req, res){
 	const path = require('path');
 
     let folder =req.params.folder;
+	let type =req.params.type;
 
     let gotty = path.join(__dirname, "../../../tools/gotty");
 	let ret ='ok'
 
-	exec(gotty+" -w --once ../tools/Bash_scripts/start_execution.sh " + folder, (error, stdout, stderr) => {
+	console.log(type);
+
+	exec(gotty+" -w --once ../tools/Bash_scripts/start_execution.sh " + folder + " " + type, (error, stdout, stderr) => {
 	    if (error) {
 	        console.log(`error: ${error.message}`);
 			ret = 'ko';
@@ -33,6 +36,7 @@ exports.execute = function (req, res){
 	    }
 	    console.log(`stdout: ${stdout}`);
 	});
+	
 	res.json(ret);
     return;
 }
