@@ -1,0 +1,147 @@
+#Title: Utility
+
+#Section: File management
+#Description: thunar
+#cfv #sid only
+gvfs-backends
+gvfs-bin
+gvfs-fuse
+jdupes
+libgphoto2-l10n
+libmtp-runtime
+mlocate
+ooo-thumbnailer
+rename
+secure-delete
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+trash-cli
+tree
+tumbler
+catfish
+
+
+
+
+#Section: Archive management
+#Description: file-roller
+file-roller
+atool
+p7zip
+p7zip-full
+arj
+cabextract
+cpio
+lzip
+lzma
+lzop
+lzip
+unace
+unalz
+unrar-free
+rar
+unzip
+zip
+iat
+nrg2iso
+gzrt
+
+
+
+#Section: Password management/file/disk encryption
+#Description: keepassxc
+keepassxc
+seahorse
+seahorse-daemon
+gnome-keyring
+ssh-askpass-gnome
+libpam-gnome-keyring
+gnupg
+gnupg2
+pwgen
+nss-passwords
+cryptsetup
+libblockdev-crypto2
+
+
+#Section: Text editors
+#Description: mousepad
+#Description: nano
+mousepad
+nano
+
+
+
+
+
+
+
+
+
+#Section: Desktop configuration utilities
+xfce4-settings
+gnome-system-tools
+menulibre
+gconf-editor
+dconf-editor
+dconf-cli
+qt4-qtconfig
+gnome-settings-daemon
+dconf-gsettings-backend
+#Alt: gnome-tweaks
+
+#Section: Power management
+#Description: xfce4-power-manager
+
+radeontool
+bumblebee
+primus
+vbetool
+powertop
+usbutils
+acpi
+acpi-support
+acpi-support-base
+laptop-mode-tools
+fancontrol
+rfkill
+cpufrequtils
+hibernate
+pm-utils
+
+
+
+plasma-desktop
+
+
+#Section: Resources
+desktop-base
+arc-theme
+sound-theme-freedesktop
+
+
+
+#Section: Other
+libnotify-bin
+zenity
+numlockx
+x11-apps
+xbitmaps
+wmctrl
+xclip
+xcalib
+xbacklight
+conky-all
+gtk2-engines
+gtk2-engines-murrine
+gtk2-engines-pixbuf
+gtk2-engines-xfce
+xdg-user-dirs-gtk
+libfile-mimeinfo-perl
+policykit-1-gnome
+#Alt: randtype
+#Alt: winwrangler
+#Alt: xdotool
+#scrcpy # sid only
