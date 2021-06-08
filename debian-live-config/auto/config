@@ -2,9 +2,6 @@
 # live-build configuration script
 # see 'man lb config'
 
-# imagen hibrida
-#--binary-images iso-hybrid \
-
 lb config noauto \
 --apt-recommends false \
 --architectures amd64 \

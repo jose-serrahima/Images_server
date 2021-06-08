@@ -1,6 +1,7 @@
 #!/bin/bash
 
 folder=$1;
+iso_type=$2;
 
 echo "*** Starting execution ***"
 
@@ -41,16 +42,21 @@ cp '../tools/Basic_config/basic.list.chroot' '../debian-live-config/config/packa
 cp '../tools/Basic_config/installer.list.binary' '../debian-live-config/config/package-lists/'
 echo '*** End basic configuration ***'
 
-#echo '*** Ensuring system has all needed packages ***'
-#dlc='../debian-live-config/'
-#cd $dlc;
-#make install_buildenv;
-#echo '*** Intallation finished ***'
 
+dlc='../debian-live-config/'
+cd $dlc;
 
-echo "*** Clean directory ***"
-make clean;
+echo "*** Configuring iso type ***"
+if [ $2 == 'iso']; then 
+	sed -i 's/--binary-images iso-hybrid/--binary-images iso/' auto/config;
+else 
+	sed -i 's/--binary-images iso/--binary-images iso-hybrid/' auto/config;
+fi
+echo "*** End configuring iso type ***"
+
+echo "*** Clean directory***"
+sudo make clean;
 echo "*** Directory cleaned ***"
 echo "*** Building directory ***"
-make build;
+sudo make;
 echo "*** Building finished ***"
