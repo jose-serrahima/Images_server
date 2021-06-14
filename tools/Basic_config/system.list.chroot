@@ -56,20 +56,11 @@ localepurge
 
 
 #Section: Display manager/screen locker
-#Description: lightdm
-#Description: light-locker
 lightdm
 lightdm-gtk-greeter
 light-locker
 accountsservice
-#Alt: slim
-#Alt: gdm3
-#Alt: arctica-greeter
-#xsecurelock #bullseye only
-#Alt: xscreensaver
-#Alt: xscreensaver-data-extra
-#Alt: xscreensaver-gl
-#Alt: xscreensaver-gl-extra
+
 
 #Section: Boot screen
 plymouth
