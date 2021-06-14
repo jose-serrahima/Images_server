@@ -34,10 +34,7 @@ update-alternatives --set x-session-manager /usr/bin/gnome-session' > '../debian
 fi 
 
 echo '*** Coping basic configuration ***'
-cp '../tools/Basic_config/00-important.list.chroot' '../debian-live-config/config/package-lists/'
-cp '../tools/Basic_config/00-required.list.chroot' '../debian-live-config/config/package-lists/'
-cp '../tools/Basic_config/basic.list.chroot' '../debian-live-config/config/package-lists/'
-cp '../tools/Basic_config/installer.list.binary' '../debian-live-config/config/package-lists/'
+cp '../tools/Basic_config/*' '../debian-live-config/config/package-lists/'
 echo '*** End basic configuration ***'
 
 
@@ -45,7 +42,7 @@ dlc='../debian-live-config/'
 cd $dlc;
 
 echo "*** Configuring iso type ***"
-if [ $2 == 'iso']; then 
+if [ $2 == 'iso' ]; then 
 	sed -i 's/--binary-images iso-hybrid/--binary-images iso/' auto/config;
 else 
 	sed -i 's/--binary-images iso/--binary-images iso-hybrid/' auto/config;
