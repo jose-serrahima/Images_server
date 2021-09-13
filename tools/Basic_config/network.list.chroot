@@ -1,12 +1,8 @@
-#Title: Networ
+#Title: network
 
 #Section: Downloaders/web crawlers
 curl
 wget
-
-
-
-
 
 #Section: Network management
 #Description: network-manager-gnome
@@ -17,22 +13,12 @@ hostname
 bridge-utils
 ethtool
 
-
-
-
-#Section: Wireless
-#Description: blueman
-blueman
-bluetooth
-crda
-wireless-regdb
-
-
-
-
 #Section: Network diagnostic/monitoring
 #Description: gnome-nettool
 gnome-nettool
-traceroute
 dnsutils
 
+#Section: SSH
+#Firewall: SSH server
+#Description: openssh-server
+openssh-server

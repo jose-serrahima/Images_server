@@ -13,10 +13,10 @@ mlocate
 ooo-thumbnailer
 rename
 secure-delete
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
+#thunar
+#thunar-archive-plugin
+#thunar-media-tags-plugin
+#thunar-volman
 trash-cli
 tree
 tumbler
