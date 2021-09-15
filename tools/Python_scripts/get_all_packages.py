@@ -41,7 +41,7 @@ for x in blocks:
 	# Adds clousure to json
 	json += '\n\t]\n}'
 	# Write file
-	f = open('api/api/list/'+x[0].lower().replace(" ", "_").replace("/", "_")+".json", "w")
+	f = open('../api/api/list/'+x[0].lower().replace(" ", "_").replace("/", "_")+".json", "w")
 	f.write (json)
 	f.close()
 	print(x[0].lower().replace(" ", "_").replace("/", "_")+".json" + " writed." )
