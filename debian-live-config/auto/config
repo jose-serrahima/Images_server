@@ -11,7 +11,7 @@ lb config noauto \
 --updates true \
 --source false \
 --binary-filesystem ext4 \
---binary-images iso \
+--binary-images iso-hybrid \
 --checksums sha256 \
 --clean \
 --debconf-frontend dialog \

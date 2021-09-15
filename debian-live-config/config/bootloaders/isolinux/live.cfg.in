@@ -4,19 +4,12 @@ menu width 82
 menu title dlc 2.2.5 - Boot menu
 include stdmenu.cfg
 
-label live-@FLAVOUR@-english
-        menu label ^Live (@FLAVOUR@) (English)
+label live-@FLAVOUR@-spanish
+        menu label ^Live (@FLAVOUR@) (Spanish)
         menu default
         linux @LINUX@
         initrd @INITRD@
-        append @APPEND_LIVE@ locales=en_US.UTF-8
-
-label live-@FLAVOUR@-french
-        menu label ^Live (@FLAVOUR@) (French)
-        menu default
-        linux @LINUX@
-        initrd @INITRD@
-        append @APPEND_LIVE@ locales=fr_FR.UTF-8
+        append @APPEND_LIVE@ locales=es_ES.UTF-8
 
 label installgui
     menu label ^Install

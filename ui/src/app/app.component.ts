@@ -61,7 +61,7 @@ export class AppComponent implements OnInit{
     if (this.control){
       this.programsService.execute(this.folder, type).subscribe( res => {
         if ("ok" == res){
-          window.open('http://localhost:8080', "_blank");
+          window.open('http://192.168.43.39:8080', "_blank");
         }
       });   
     } else {

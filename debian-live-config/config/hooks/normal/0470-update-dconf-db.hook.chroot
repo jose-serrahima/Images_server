@@ -1,2 +1,2 @@
 #!/bin/bash
-#dconf update
+dconf update

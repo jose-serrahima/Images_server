@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   update_packages_list(){
     this.programsService.update_packages_list().subscribe( res => {
       if ("ok" == res){
-        window.open('http://localhost:8080', "_blank");
+        window.open('http://192.168.43.39:8080', "_blank");
       }
     });    
   }
