@@ -1,6 +1,6 @@
 # Images server
 
-Early version of web interface and api-rest to operate (debian-live-config)[https://github.com/nodiscc/debian-live-config]
+Early version of web interface and api-rest to operate [debian-live-config](https://github.com/nodiscc/debian-live-config)
 
 ## Requirements
 
